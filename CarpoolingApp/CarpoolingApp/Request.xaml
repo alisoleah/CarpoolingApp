@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarpoolingApp.Request" 
+             Title="Carpooling" BackgroundColor="#0a66c2">
+    <ScrollView>
+        
+    
+  <StackLayout HorizontalOptions="Center" Padding="70">
+  <Label Text=""/>
+  <Label Text=""/>
+  <Label Text=""/>
+  <Button Text="Share my ride" TextColor="White" BackgroundColor="#BDC3C7" FontAttributes="Bold" Clicked="OnbtnShare"/>
+  <Button Text="Request a drive" TextColor="White" BackgroundColor="#BDC3C7" FontAttributes="Bold" Clicked="OnbtnRequest"/>
+  <Label Text=""/>
+  <Label Text=""/>
+  <Label Text=""/>
+    <Label Text=""/>
+    <Label Text=""/>
+    <Label Text=""/>
+    <Label Text=""/>
+    <Label Text=""/>
+    <Label Text=""/>
+    <Label Text="Logout" TextColor="White" BackgroundColor="#0A66C2" FontAttributes="Bold" FontSize="14" HorizontalTextAlignment="End"/>
+  </StackLayout>
+    </ScrollView>
+</ContentPage>

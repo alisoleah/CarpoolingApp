@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "Edit";
+}
+
+
+@model BackendDellEmc.ViewModel.UserViewModel
+
+<h2> Edit </h2>
+<div align="center" width="500px">
+    @using (Html.BeginForm("Edit", "xUser", FormMethod.Post))
+    {
+        <table class="table"
+               width="400px"
+               cellpadding="20">
+            <tr class="btn-default">
+                <td>
+                    @Html.LabelFor(model => model.user.UserName)
+                </td>
+
+                <td>
+                    @Html.TextBoxFor(model => model.user.UserName)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(model => model.user.Password)
+                </td>
+
+                <td>
+                    @Html.TextBoxFor(model => model.user.Password)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @Html.LabelFor(model => model.user.longlat)
+                </td>
+
+                <td>
+                    @Html.TextBoxFor(model => model.user.longlat)
+                </td>
+            </tr>
+      
+            <tr>
+                <td> </td>
+
+                <td>
+                    <input type="submit" value="Save" /> &nbsp; <a class="btn-primary" href="@Url.Action("Index ","xUser ")"> Back </a>
+                    @Html.HiddenFor(model => model.user.Id)
+                </td>
+            </tr>
+        </table>
+    }
+</div>

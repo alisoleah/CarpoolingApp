@@ -1,0 +1,60 @@
+﻿@model BackendDellEmc.ViewModel.UserViewModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+<div align = "center" >
+@using (Html.BeginForm("create", "xUser", FormMethod.Post))
+{
+    <table class="table">
+        <tr>
+            <td>
+                @Html.LabelFor(model => model.user.UserName)
+            </td>
+
+            <td>
+                @Html.TextBoxFor(model => model.user.UserName)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.LabelFor(model => model.user.Password)
+            </td>
+
+            <td>
+                @Html.TextBoxFor(model => model.user.Password)
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.LabelFor(model => model.user.Name)
+            </td>
+
+            <td>
+                @Html.TextBoxFor(model => model.user.Name)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.LabelFor(model => model.user.longlat)
+            </td>
+
+            <td>
+                @Html.TextBoxFor(model => model.user.longlat)
+            </td>
+        </tr>
+        
+        <tr>
+            <td></td>
+
+            <td>
+                <input type="submit"  value="Save" />
+            </td>
+        </tr>
+    </table>
+}
+    </div>

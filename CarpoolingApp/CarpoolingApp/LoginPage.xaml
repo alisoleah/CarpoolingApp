@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarpoolingApp.LoginPage"
+             BackgroundColor="#0a66c2">
+    <ScrollView>
+  <Label VerticalOptions="Center" HorizontalOptions="Center" />
+  <StackLayout BackgroundColor="#0a66c2" HorizontalOptions="Center">
+    <Label Text=""/> 
+    <Label Text="CarPooling" HorizontalTextAlignment="Center" TextColor="White" FontAttributes="Bold" FontSize="24"/>
+    
+    <Image Source="carpooling.jpg" />
+    
+    <Label Text="Username" FontSize="18"   TextColor="White"/>
+    <Entry Text="{Binding Path=Username}" x:Name="Username" BackgroundColor="#FFFFFF" TextColor="#0a66c2"/>
+ 
+    <Label Text="Password" FontSize="18"  TextColor="White"/>
+    <Entry Text="{Binding Path=Password}" IsPassword="true" x:Name="Password" BackgroundColor="#FFFFFF" TextColor="#0a66c2" />
+    <Label Text=""/>
+    <Button Text="Log In" BackgroundColor="#BDC3C7" TextColor="White" FontAttributes="Bold" FontSize="14" Clicked="OnbtnGo" />
+
+    <Button Text="Forgot your password?" TextColor="White" FontAttributes="Italic" BorderWidth="0" BackgroundColor="#0a66c2" FontSize="12" Clicked="OnbtnForgot"/>
+    <Button Text="Register?" TextColor="White" FontAttributes="Italic" BorderWidth="0" BackgroundColor="#0a66c2" FontSize="12" Clicked="OnbtnReg"/>  
+  </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -3,9 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CarpoolingApp.Request" 
              Title="Carpooling" BackgroundColor="#0a66c2">
-    <ScrollView>
-        
-    
   <StackLayout HorizontalOptions="Center" Padding="70">
   <Label Text=""/>
   <Label Text=""/>
@@ -23,5 +20,4 @@
     <Label Text=""/>
     <Label Text="Logout" TextColor="White" BackgroundColor="#0A66C2" FontAttributes="Bold" FontSize="14" HorizontalTextAlignment="End"/>
   </StackLayout>
-    </ScrollView>
 </ContentPage>

@@ -17,7 +17,8 @@ namespace BackendDellEmc.Controllers
 {
     public class UsersController : ApiController
     {
-        private MydbEntities db = new MydbEntities();
+        //private MydbEntities db = new MydbEntities();
+        private Database1Entities db = new Database1Entities();
       
 
         // GET: api/Users

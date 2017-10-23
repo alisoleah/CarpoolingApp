@@ -35,6 +35,7 @@ namespace BackendDellEmc.Controllers
 
         public ActionResult Delete(int id)
         {
+            //func
             UserClient CC = new UserClient();
             CC.Delete(id);
             return RedirectToAction("Index");
